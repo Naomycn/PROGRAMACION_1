@@ -1,6 +1,10 @@
 # PROGRAMACION_1
 tareas programacion 
-/*Programa que solicite al usuario ingresar el tamaño de un array multidimensional. 
+
+
+
+
+                        /*Programa que solicite al usuario ingresar el tamaño de un array multidimensional. 
 El usuario deberá poder ingresar los valores y asignarlos al array. 
 Luego el programa deberá mostrar al usuario el resultado de la suma y multiplicación de los 2 arrays.*/
 
