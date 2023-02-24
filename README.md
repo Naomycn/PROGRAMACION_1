@@ -1,6 +1,6 @@
 # PROGRAMACION_1
 tareas programacion 
-
+.
 /*Programa que solicite al usuario ingresar el tamaño de un array multidimensional. 
 El usuario deberá poder ingresar los valores y asignarlos al array. 
 Luego el programa deberá mostrar al usuario el resultado de la suma y multiplicación de los 2 arrays.*/
@@ -49,10 +49,8 @@ cin>>f;
 	cout<<"la suma de los arrays ingresados es de:  "<<suma<<endl;
 	cout<<"la multiplicacion de los arrays ingresados es de:  "<<multiplicacion<<endl;
 }
-
-.									  
-
-											  //WHILE en githut
+											  .
+					//WHILE en githut
 
 //Declaramos librerias
 #include <iostream>
@@ -78,10 +76,9 @@ int main() {
     
     return 0;
 }
-												   
-.
-												   
-//Do while ejercicio No.1
+
+												   .
+												   //Do while ejercicio No.1
 
 //Declaramos Libreria
 #include <iostream>
@@ -94,17 +91,15 @@ int main() {
     int num;
     int suma = 0;
     do {
-        cout << "Ingresa un número (ingresa 0 para terminar): 
+        cout << "Ingresa un número (ingresa 0 para terminar): ";
         cin >> num;
         suma += num;
     } while (num != 0);
     cout << "La suma de los números ingresados es: " << suma << endl;
     return 0;
 }
-
-.
-	//Ejercicio de Matriz
-	#include <iostream>
+	
+	.#include <iostream>
 #include <conio.h>
 
 
@@ -143,5 +138,40 @@ cout<<dripCake[i][j];
 
 cout<<"\n";
 }
-return 0;
+return 0;//Ejercicio no.1 de vectores
+
+//Declaramos librerias
+#include <iostream>
+#include <vector>
+//Incluimos el espacio de nombres
+using namespace std;
+
+//creamos nuestra funcion princpal main
+int main() {
+    vector<int> numeros; // Creamos un vector de enteros vacío
+    int num;
+
+    // Pedimos al usuario que ingrese 5 números enteros y los agregamos al vector
+    for (int i = 1; i <= 5; i++) {
+        cout << "Ingrese el número " << i << ": ";
+        cin >> num;
+        numeros.push_back(num);
+    }
+
+    // Mostramos los números ingresados por pantalla
+    cout << "Los números ingresados son: ";
+    for (int i = 0; i < numeros.size(); i++) {
+        cout << numeros[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
 }
+
+}
+	
+	.
+	
+	
+	
+	
