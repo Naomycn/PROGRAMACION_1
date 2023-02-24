@@ -1,31 +1,51 @@
 # PROGRAMACION_1
 tareas programacion 
-                                       //Ejercicio no.1 de vectores
 
-//Declaramos librerias
-#include <iostream>
-#include <vector>
+/*Programa que solicite al usuario ingresar el tamaño de un array multidimensional. 
+El usuario deberá poder ingresar los valores y asignarlos al array. 
+Luego el programa deberá mostrar al usuario el resultado de la suma y multiplicación de los 2 arrays.*/
+
+//Declaramos libreria
+#include<iostream>
+#include<conio.h>
+
 //Incluimos el espacio de nombres
 using namespace std;
 
-//creamos nuestra funcion princpal main
-int main() {
-    vector<int> numeros; // Creamos un vector de enteros vacío
-    int num;
+//Declaramos la funcion principal Main
+int main(){
+	
+	int numeros[100];
+	int suma = 0;
+	int multiplicacion = 1;
+	int f;
+	
+cout<<" Bievenido al programa de suma y multiplicacion de 2 Arrays!  ";	
+cout<<"\n-----------------------------------------------------------  ";	
+cout<<"\nIngresa la cantidad de arreglos que desea ingresar -->  ";
+cin>>f;
+	
+	//Sirve para llenar los valore
+	for(int i=0;i<f;i++){	
+	
+	
+	//Sirve para llenar los valores de los arrays
+		cout<<"Por Favor ingrese los datos del arreglo ["<<i<<"]";
+		cin>>numeros[i];
+		}
+	
+	
 
-    // Pedimos al usuario que ingrese 5 números enteros y los agregamos al vector
-    for (int i = 1; i <= 5; i++) {
-        cout << "Ingrese el número " << i << ": ";
-        cin >> num;
-        numeros.push_back(num);
-    }
-
-    // Mostramos los números ingresados por pantalla
-    cout << "Los números ingresados son: ";
-    for (int i = 0; i < numeros.size(); i++) {
-        cout << numeros[i] << " ";
-    }
-    cout << endl;
-
-    return 0;
+	for(int i=0;i<f;i++){
+		//Declaramos para hacer la suma de los arrays
+		suma += numeros[i];
+		//Declaramos para hacer la multiplicacion de los arrays
+		multiplicacion *= numeros[i];
+		
+	}
+	
+	
+	
+	cout<<"la suma de los arrays ingresados es de:  "<<suma<<endl;
+	cout<<"la multiplicacion de los arrays ingresados es de:  "<<multiplicacion<<endl;
 }
